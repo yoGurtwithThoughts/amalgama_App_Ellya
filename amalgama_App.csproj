@@ -10,21 +10,30 @@
 
   <ItemGroup>
     <None Remove="Assets\Fonts\Jura.ttf" />
+    <None Remove="Images\bannerbackground.png" />
+    <None Remove="Images\bannershake.svg" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="Images\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetProjects.SVGImage" Version="5.2.1" />
     <PackageReference Include="MaterialDesignColors" Version="3.1.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="SharpVectors" Version="1.8.4.2" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Fonts\Jura.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bannerbackground.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bannershake.svg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
